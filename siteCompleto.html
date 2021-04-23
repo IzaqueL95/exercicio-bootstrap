@@ -35,6 +35,31 @@
        
      }
 
+     .corFundoJ{
+        
+      opacity:10;
+        
+        background: rgba(0, 0, 0, 0.87); /*cor que torna a barra transparente*/
+        overflow: hidden;
+        backdrop-filter: blur(25px); /* elemento que deixa a transparência mais ofuscada*/
+       
+     }
+
+     a {
+       color: rgb(255, 255, 255);
+       transition: all .3s ease-in-out;
+     }
+     a:hover {
+       color: rgb(69, 204, 204);
+     }
+
+     #logoTransition{
+      transition: all .4s ease-in-out;
+     }
+     #logoTransition:hover {
+      background : url(assets/img/apple3.png);  
+      opacity: 0.8;
+}     
      
      </style>
     <!--/Aplicação do CSS internamente-->
@@ -42,33 +67,34 @@
   </head>
   <body>
       <!--Inicio do menu-->
-    <nav class="navbar navbar-expand-lg navbar-light  fixed-top corFundo">
-        <img class="tm-social-icon" src="assets/img/apple3.png" alt="">
-        
+    <nav class="navbar navbar-expand-lg navbar-dark a fixed-top corFundoJ">
+      <a href="#" target="blank">
+        <img class="tm-social-icon" id="logoTransition" src="assets/img/apple3.png" alt="#">
+      </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="collapse navbar-collapse logoTransition" id="navbarNav">
           <ul class="navbar-nav">
-            <li class="nav-item active">
+            <li class="nav-item a">
               <a class="nav-link" href="#">Home <span class="sr-only">(Página atual)</span></a>
             </li>
-            <li class="nav-item active"> 
-              <a class="nav-link textNavColor" href="#">iPad</a>
+            <li class="nav-item a"> 
+              <a class="nav-link " href="#">iPad</a>
             </li>
-            <li class="nav-item active">
+            <li class="nav-item a">
               <a class="nav-link" href="#">iPhone</a>
             </li>
-            <li class="nav-item active">
+            <li class="nav-item a">
                 <a class="nav-link" href="#">Watch</a>
               </li>
-              <li class="nav-item active">
+              <li class="nav-item a">
                 <a class="nav-link" href="#">TV</a>
               </li> 
-              <li class="nav-item active">
+              <li class="nav-item a">
                 <a class="nav-link" href="#">Music</a>
               </li>
-              <li class="nav-item active">
+              <li class="nav-item a">
                 <a class="nav-link" href="#">Suporte</a>
               </li>
           </ul>
@@ -246,9 +272,11 @@
               <p>Apple Inc é uma corporação global e suas normas de exibição estão de acordo com as normas de cada território</p>
               <p>Não deixe de nos acompanhar nos canais sociais e através do blog</p>
             </div>
+            
 
             <iframe width="560" height="315" src="https://www.youtube.com/embed/66XwG1CLHuU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
+      
       <!--/Fim da caixa de divisão do texto e vídeo-->
       <hr>
       <!--Inicio da barra inferior com texto e icones sociais-->

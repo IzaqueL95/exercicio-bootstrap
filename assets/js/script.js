@@ -19,6 +19,8 @@ document.getElementsByClassName('needs-validation');
 
 nome.style.width = '100%'
 
+
+
 function validaNome() {
     let txtNome = document.querySelector('#txtNome')
     
